@@ -19,3 +19,7 @@ section#login > div#formulario{
     float: left;
     width: 50%;
 }
+
+section#login > div#formulario > p{
+    font-size: 1.2em;
+}

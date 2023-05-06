@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width:768px) and (max-width:992px)">
     <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width:992px)">
@@ -19,15 +20,23 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurções no seu ambiente</p>
                 <form action="login.php" method="post">
-                    <p>
-                        <label for="imail"></label>
-                        <input type="email" name="mail" id="imail" placeholder="Seu e-mail" required>
-                    </p>
-                    <p>
-                        <label for="isen"></label>
-                        <input type="password" name="sen" id="isen" placeholder="Sua senha" required>
-                    </p>
-                    <input type="submit" value="Entrar">
+                        <div id="imail">
+                            <span class="material-icons">person</span>                       
+                            <label for="imail"></label>
+                            <input type="email" name="mail" id="imail" placeholder="Seu e-mail" required autocomplete="email">
+                        </div>
+                        <div id="isen">  
+                            <span class="material-icons">lock</span>                  
+                            <label for="isen"></label>
+                            <input type="password" name="sen" id="isen" placeholder="Sua senha" required autocomplete="current-password" minlength="8" maxlength="15">
+                        </div>
+                    <div id="subm"><input type="submit" value="Entrar"></div>
+                    <div>
+                        <a href="#">Esqueci a senha</a>
+                        <span class="material-icons">
+                            lock_reset
+                            </span>
+                    </div>
                 </form>
             </div>
         </section>

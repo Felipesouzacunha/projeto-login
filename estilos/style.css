@@ -58,4 +58,19 @@ section#login > div#formulario{
 section#login > div#formulario > h1{
     text-align: center;
     font-size: 1.8em;
+    padding-bottom: 10px;
+}
+
+section#login > div#formulario > p{
+    font-size: 0.8em;
+}
+
+div#imail{
+    background-color: #5f2c82;
+    margin-bottom: 5px;
+}
+
+div#isen{
+    background-color: #5f2c82;
+    margin-bottom: 5px;
 }
